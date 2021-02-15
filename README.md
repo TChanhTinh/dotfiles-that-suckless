@@ -1,2 +1,1 @@
-# cringe
-:fallen_leaf: 𝘤𝘶𝘳𝘳𝘦𝘯𝘵𝘭𝘺 𝘳𝘪𝘤𝘦 𝘪𝘴 𝘯𝘰𝘵 𝘨𝘰𝘰𝘥 𝘦𝘯𝘰𝘶𝘨𝘩. 𝚆𝙸𝙿/𝙰𝚋𝚊𝚗𝚍𝚘𝚗𝚎𝚍? 𝙸𝚍𝚔.
+<p align="center"><img src="https://raw.githubusercontent.com/owl4ce/cringe/main/2021-02-15-161234_1366x768_scrot.png"/></p>
