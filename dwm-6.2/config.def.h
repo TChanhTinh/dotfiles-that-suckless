@@ -8,8 +8,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int horizpadbar        = -7;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 7;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "Material:size=12", "Iosevka:size=10" };
-static const char dmenufont[]       = "Iosevka:size=10";
+static const char *fonts[]          = { "Font Awesome 5 Free:size=13", "Font Awesome 5 Free:size=10" };
+static const char dmenufont[]       = "Font Awesome 5 Free:size=13";
 static const char col_gray1[]       = "#3B4252";
 static const char col_gray2[]       = "#434C5E";
 static const char col_gray3[]       = "#E6BAFF";
@@ -22,7 +22,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { "", "", "", "", "", "", "" };
+static const char *tags[] = { " ₁", " ₂", " ₃", " ₄", " ₅" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -41,9 +41,9 @@ static const int resizehints = 0;    /* 1 means respect size hints in tiled resi
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "",      tile },    /* first entry is default */
-	{ "",      NULL },    /* no layout function means floating behavior */
-	{ "",      monocle },
+	{ "ₜ",      tile },    /* first entry is default */
+	{ "ₙ",      NULL },    /* no layout function means floating behavior */
+	{ "ₘ",      monocle },
 };
 
 /* key definitions */
@@ -61,11 +61,13 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = { "bash", "-c", "$HOME/.config/rofi/scripts/appsmenu.sh", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
+static const char *filecmd[] = { "thunar", NULL };
 
 static Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
-	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
+	{ MODKEY,                       XK_t, spawn,          {.v = termcmd } },
+    { MODKEY,                       XK_e,      spawn,          {.v = filecmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_Right,  focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_Left,   focusstack,     {.i = -1 } },
@@ -76,8 +78,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_x,      zoom,           {0} },
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_c,      killclient,     {0} },
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[0]} },
+	{ MODKEY,                       XK_n,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },

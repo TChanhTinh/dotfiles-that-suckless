@@ -9,5 +9,6 @@ source $HOME/.owl4ce_var
     picom -b &
     dunst -conf $HOME/.config/dunst/dunstrc-mech-MINMOD &
     lxpolkit &> /dev/null &
+    ibus-daemon -drx &
 
 } &> /dev/null
