@@ -750,7 +750,7 @@ void
 drawbar(Monitor *m)
 {
 	int x, w, sw = 0, n = 0, scm;
-	int boxs = drw->fonts->h / 9;
+	//int boxs = drw->fonts->h / 9;
 	int boxw = drw->fonts->h / 6 + 2;
 	unsigned int i, occ = 0, urg = 0;
 	Client *c;
@@ -1398,7 +1398,7 @@ propertynotify(XEvent *e)
 void
 quit(const Arg *arg)
 {
-	// fix: reloading dwm keeps all the hidden clients hidden
+	/*// fix: reloading dwm keeps all the hidden clients hidden
 	Monitor *m;
 	Client *c;
 	for (m = mons; m; m = m->next) {
@@ -1406,7 +1406,9 @@ quit(const Arg *arg)
 			for (c = m->stack; c; c = c->next)
 				if (c && HIDDEN(c)) showwin(c);
 		}
-	}
+	}*/
+	if(arg->i) restart = 1;
+	running = 0;
 }
 
 Monitor *

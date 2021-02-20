@@ -8,7 +8,7 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int horizpadbar        = -7;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 7;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "Font Awesome 5 Free:size=13", "Font Awesome 5 Free:size=10" };
+static const char *fonts[]          = { "Font Awesome 5 Free:size=13", "Font Awesome 5 Free:size=11" };
 static const char dmenufont[]       = "Font Awesome 5 Free:size=13";
 static const char col_gray1[]       = "#3B4252";
 static const char col_gray2[]       = "#434C5E";
@@ -23,7 +23,7 @@ static const char *colors[][3]      = {
 };
 
 /* tagging */
-static const char *tags[] = { " ₁", " ₂", " ₃", " ₄", " ₅" };
+static const char *tags[] = { "₁", "₂", "₃", "₄", "₅" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -66,37 +66,49 @@ static const char *voldowncmd[] = { "bash", "-c", "$HOME/.dwm/scripts/notify/cha
 static const char *volmutecmd[] = { "bash", "-c", "$HOME/.dwm/scripts/notify/change-volume.sh mute", NULL };
 static const char *brightupcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/notify/change-brightness.sh up", NULL };
 static const char *brightdowncmd[] = { "bash", "-c", "$HOME/.dwm/scripts/notify/change-brightness.sh down", NULL };
+static const char *playernextcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller next", NULL };
+static const char *playerprevcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller prev", NULL };
+static const char *playerstopcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller stop", NULL };
+static const char *playertogglecmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller toggle", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *filecmd[] = { "thunar", NULL };
 
+#include <X11/XF86keysym.h>
 static Key keys[] = {
 	/* modifier                     key        function        argument */
-	{ 0,                       0x1008ff13,      spawn,    {.v = volupcmd } },
-    { 0,                       0x1008ff11,      spawn,          {.v = voldowncmd } },
-    { 0,                       0x1008ff12,      spawn,          {.v = volmutecmd } },
+	{ 0,                       XF86XK_AudioRaiseVolume,      spawn,    {.v = volupcmd } },
+    { 0,                       XF86XK_AudioLowerVolume,      spawn,          {.v = voldowncmd } },
+    { 0,                       XF86XK_AudioMute,      spawn,          {.v = volmutecmd } },
     
-	{ 0,                       0x1008ff8e,      spawn,    {.v = brightupcmd } },
-    { 0,                       0x1008ff1b,      spawn,          {.v = brightdowncmd } },
+    
+	{ 0,                       XF86XK_AudioNext,      spawn,    {.v = playernextcmd } },
+    { 0,                       XF86XK_AudioPrev,      spawn,          {.v = playerprevcmd } },
+    { 0,                       XF86XK_AudioPlay,      spawn,          {.v = playertogglecmd } },
+    { 0,                       XF86XK_AudioStop,      spawn,          {.v = playerstopcmd } },
+    
+	{ 0,                       XF86XK_MonBrightnessUp,      spawn,    {.v = brightupcmd } },
+    { 0,                       XF86XK_MonBrightnessDown,      spawn,          {.v = brightdowncmd } },
     
 	{ MODKEY,                       XK_r,      spawn,          {.v = dmenucmd } },
 	{ MODKEY,                       XK_t, spawn,          {.v = termcmd } },
     { MODKEY,                       XK_e,      spawn,          {.v = filecmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_j,      focusstackvis,  {.i = +1 } },
-	{ MODKEY,                       XK_k,      focusstackvis,  {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_j,      focusstackhid,  {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_k,      focusstackhid,  {.i = -1 } },
+	{ MODKEY,                       XK_a,      focusstackvis,  {.i = +1 } },
+	{ MODKEY,                       XK_Tab,      focusstackvis,  {.i = +1 } },
+	{ MODKEY,                       XK_d,      focusstackvis,  {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_a,      focusstackhid,  {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_d,      focusstackhid,  {.i = -1 } },
 	{ MODKEY,                       XK_h,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_v,      incnmaster,     {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_Left,   setmfact,       {.f = -0.05} },
 	{ MODKEY|ShiftMask,             XK_Right,  setmfact,       {.f = +0.05} },
-	{ MODKEY,                       XK_x,      zoom,           {0} },
-	{ MODKEY,                       XK_Tab,    view,           {0} },
+	{ MODKEY,                       XK_z,      zoom,           {0} },
+	{ MODKEY,                       XK_sacute,    view,           {0} },
 	{ MODKEY,                       XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_k,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_n,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-	{ MODKEY,                       XK_space,  setlayout,      {0} },
+	{ MODKEY,                       XK_x,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
 	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
