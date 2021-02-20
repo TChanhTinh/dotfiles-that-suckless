@@ -49,8 +49,10 @@ case $1 in
     title) 
         if [[ $status = *"laying"* ]]; then
             echo "  $title"
+        elif [[ $status = *"paused"* ]]; then
+            echo "  $title"
         else
-            echo "  $title" 
+            echo "" 
         fi
     ;;
     switchpl)
@@ -62,4 +64,9 @@ case $1 in
         fi
         $EXNOTIFY_SEND -u low -i "$NOTIF_MUSIC_ICON" -r 8888 "Music Player" "Set <u>`$DEFAPPS_EXEC -g musicpl`</u> as default"
     ;;
+    1) mpc -q next;;
+esac
+
+case $BUTTON in
+    1) mpc -q next;;
 esac
