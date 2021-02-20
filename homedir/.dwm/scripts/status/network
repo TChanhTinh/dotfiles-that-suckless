@@ -5,7 +5,7 @@ noterr() { echo "Install iproute2/wireless-tools!"; exit 1; }
 command -v {"ip","iwgetid"} > /dev/null 2>&1 || noterr
 
 # Icons
-wifi=""
+wifi=""
 wifi_noip=""
 wifi_disabled=""
 lan=""
@@ -42,5 +42,7 @@ case $1 in
     status) echo "$status"
     ;;
     icon) echo "$icon"
+    ;;
+    both) echo "$icon $status"
     ;;
 esac

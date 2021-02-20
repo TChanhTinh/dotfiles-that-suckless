@@ -70,6 +70,8 @@ static const char *playernextcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-c
 static const char *playerprevcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller prev", NULL };
 static const char *playerstopcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller stop", NULL };
 static const char *playertogglecmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller toggle", NULL };
+static const char *screenshotcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/shot-now", NULL };
+static const char *screenshotdrwcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/shot-seldraw", NULL };
 static const char *termcmd[]  = { "urxvt", NULL };
 static const char *filecmd[] = { "thunar", NULL };
 
@@ -80,6 +82,8 @@ static Key keys[] = {
     { 0,                       XF86XK_AudioLowerVolume,      spawn,          {.v = voldowncmd } },
     { 0,                       XF86XK_AudioMute,      spawn,          {.v = volmutecmd } },
     
+    { 0,                       XK_Print,      spawn,          {.v = screenshotcmd } },
+    { MODKEY|ShiftMask,                       XK_s,      spawn,          {.v = screenshotdrwcmd } },
     
 	{ 0,                       XF86XK_AudioNext,      spawn,    {.v = playernextcmd } },
     { 0,                       XF86XK_AudioPrev,      spawn,          {.v = playerprevcmd } },

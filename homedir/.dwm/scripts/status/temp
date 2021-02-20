@@ -6,10 +6,19 @@ temp_dev_path="/sys/devices/virtual/thermal"
 [[ -d $temp_dev_path/$TEMP_DEV ]] && \
 
 get_temp() {
-    CEL=$'\xc2\xb0C'
     temp="$(cat $temp_dev_path/$TEMP_DEV/temp)"
     temp="$(expr $temp / 1000)"
-    echo "$temp$CEL"
+    if [[ "$temp" -lt 50 ]]; then
+        icon=""
+    elif [[ "$temp" -lt 60 ]]; then
+        icon=""
+    elif [[ "$temp" -lt 70 ]]; then
+        icon=""
+    else
+        icon=""
+    fi
+    CEL=$'\xc2\xb0C'
+    echo "$icon $temp$CEL"
 }
 
 get_temp || echo "$TEMP_DEV not found!"; exit 1
