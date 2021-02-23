@@ -1,0 +1,88 @@
+@import "shared/settings.rasi"
+
+* {
+  background-color: @background;
+  text-color: @foreground-list;
+  font: @text-font;
+  border-radius: 8px;
+}
+
+#window {
+  padding: @list-8-window-padding;
+  anchor: center;
+  location: center;
+  border-radius: 0px;
+}
+
+inputbar,
+prompt,
+textbox-prompt-colon,
+indicator,
+num-filtered-rows,
+textbox-sep,
+num-rows,
+entry {
+  background-color: @background-light;
+}
+
+#inputbar {
+  children: [ prompt, textbox-prompt-colon, entry, indicator ];
+  margin: @inputbar-margin;
+  border-radius: 8px;
+}
+
+#prompt {
+  font: @entry-icon-font;
+  padding: @prompt-padding;
+  background-color: @background-focus;
+  text-color: @accent;
+}
+
+#textbox-prompt-colon {
+  expand: false;
+  str: "";
+  padding: @apps-textbox-prompt-colon-padding;
+}
+
+#entry {
+  text-color: @foreground;
+  padding: @entry-padding;
+}
+
+#indicator {
+  children: [ num-filtered-rows, textbox-sep, num-rows];
+  orientation: horizontal;
+  expand: false;
+  padding: 0 10px;
+}
+
+num-filtered-rows,
+textbox-sep,
+num-rows {
+  font: @entry-icon-font;
+  text-color: @accent;
+  expand: false;
+  str: "/";
+  vertical-align: 0.58;
+  padding: 0 2px;
+}
+
+#element {
+  padding: @list-element-padding;
+  margin: @list-element-margin;
+  border: @list-element-border;
+  background-color: @background-light;
+  border-color: @background-light;
+  border-radius: 8px;
+}
+
+#element.selected {
+  background-color: @background-focus;
+  text-color: @foreground-list;
+  border-color: @background;
+  border-radius: 8px;
+}
+
+#element-icon {
+    size: 2ch;
+}
