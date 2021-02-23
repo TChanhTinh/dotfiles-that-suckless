@@ -46,3 +46,7 @@ case $1 in
     both) echo "$icon $status"
     ;;
 esac
+
+case $BUTTON in
+    1) dunstify --replace=1 "Volume $vol%";;
+esac

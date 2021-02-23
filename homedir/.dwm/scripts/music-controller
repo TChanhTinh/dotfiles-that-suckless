@@ -48,11 +48,11 @@ case $1 in
     ;;
     title) 
         if [[ $status = *"laying"* ]]; then
-            echo "  $title"
+            echo "  $title $ytfzf_title"
         elif [[ $status = *"paused"* ]]; then
-            echo "  $title"
+            echo "  $title $ytfzf_title"
         else
-            echo "" 
+            echo "  $(cat ~/.cache/ytfzf/ytfzf_cur | cut -f1 -d '|' | sed 's/\[[^]]*\]//g' | sed 's/  \+//g' )" 
         fi
     ;;
     switchpl)
@@ -68,5 +68,6 @@ case $1 in
 esac
 
 case $BUTTON in
-    1) mpc -q next;;
+    1) mpc -q toggle;;
+    2) mpc -q next;;
 esac

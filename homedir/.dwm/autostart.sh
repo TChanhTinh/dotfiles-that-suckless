@@ -4,6 +4,7 @@ source $HOME/.owl4ce_var
 {
     xrdb $HOME/.Xresources
     dwmblocks  &
+    mpd &
     pulseaudio --start &
     nitrogen --set-zoom-fill --save $HOME/.wallpaper/mechanical/autumn_3K.jpg &
     picom -b &
