@@ -129,7 +129,9 @@ alias nvimsu="$PRIV nvim"
 alias refram="$PRIV bash -c \"sync; echo 3 > /proc/sys/vm/drop_caches\""
 alias ls="exa -lgh --icons --group-directories-first"
 alias la="exa -lgha --icons --group-directories-first"
-
+alias wally="sh $HOME/.dwm/scripts/wally"
+alias listen='f() { ytfzf -t -m -l $@};f'
+alias watch='f() { ytfzf -t -l $@};f'
 
 # Color toys aliases
 alias bloks="~/.color-toys/bloks"
@@ -149,3 +151,5 @@ export BAT_THEME="base16"
 
 # GPG Dialog
 export GPG_TTY=$(tty)
+
+export YTFZF_EXTMENU='rofi -dmenu -fuzzy -width 800'

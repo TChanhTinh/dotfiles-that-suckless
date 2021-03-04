@@ -97,7 +97,7 @@ MPD_TCD="$NCMPCPP_SCRIPTS_DIR/track-change-detector"
 #-------------------------------------------------------------------------#
 
 INT_ETH="enp2s0"
-INT_WIFI="wlp3s0"
+INT_WIFI="wlan0"
 TEMP_DEV="thermal_zone0"
 
 #-------------------------------------------------------------------------#
