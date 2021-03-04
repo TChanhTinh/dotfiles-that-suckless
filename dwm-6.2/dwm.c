@@ -2014,19 +2014,19 @@ tile(Monitor *m)
 			//ty += HEIGHT(c) + gappx;
 			smh = m->mh * m->smfact;
 			if(!(nexttiled(c->next)))
-				h = (m->wh - ty) / (n - i);
+				h = (m->wh - ty) / (n - i) - gappx;
 			else
-				h = (m->wh - smh - ty) / (n - i);
+				h = (m->wh - smh - ty) / (n - i) - gappx;
 			if(h < minwsz) {
 				c->isfloating = True;
 				XRaiseWindow(dpy, c->win);
-				resize(c, m->mx + (m->mw / 2 - WIDTH(c) / 2), m->my + (m->mh / 2 - HEIGHT(c) / 2), m->ww - mw - (2*c->bw), h - (2*c->bw), False);
+				resize(c, m->mx + (m->mw / 2 - WIDTH(c) / 2) , m->my + (m->mh / 2 - HEIGHT(c) / 2), m->ww - mw - (2*c->bw), h - (2*c->bw), False);
 				ty -= HEIGHT(c);
 			}
 			else
-				resize(c, m->wx + mw, m->wy + ty, m->ww - mw - (2*c->bw), h - (2*c->bw), False);
+				resize(c, m->wx + mw + gappx/ns, m->wy + ty, m->ww - mw - (2*c->bw) - gappx*(5-ns)/2, h - (2*c->bw), False);
 			if(!(nexttiled(c->next)))
-				ty += HEIGHT(c) + smh;
+				ty += HEIGHT(c) + smh + gappx;
 			else
 				ty += HEIGHT(c) + gappx;
 		}
