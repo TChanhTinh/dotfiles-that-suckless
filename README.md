@@ -22,4 +22,4 @@ This is a fork of cringe repository of Owl4ce with additional status indicator a
 * dwm-statuscmd-signal
 * dwmblocks-statuscmd
 
-The scripts are taken from owl4ce/dotfiles repository
+The scripts are taken from owl4ce/dotfiles repository and modified
