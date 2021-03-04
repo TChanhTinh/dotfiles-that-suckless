@@ -4,6 +4,7 @@
 static const unsigned int borderpx = 1;        /* border pixel of windows */
 static const unsigned int gappx    = 10;       /* gap pixel between windows */
 static const unsigned int snap     = 32;       /* snap pixel */
+static const unsigned int minwsz    = 20;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int horizpadbar        = -7;        /* horizontal padding for statusbar */
@@ -37,6 +38,7 @@ static const Rule rules[] = {
 
 /* layout(s) */
 static const float mfact     = 0.50; /* factor of master area size [0.05..0.95] */
+static const float smfact    = 0.00;
 static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 0;    /* 1 means respect size hints in tiled resizals */
 
@@ -83,7 +85,7 @@ static Key keys[] = {
     { 0,                       XF86XK_AudioMute,      spawn,          {.v = volmutecmd } },
     
     { 0,                       XK_Print,      spawn,          {.v = screenshotcmd } },
-    { MODKEY|ShiftMask,                       XK_s,      spawn,          {.v = screenshotdrwcmd } },
+    { ShiftMask,                       XK_Print,      spawn,          {.v = screenshotdrwcmd } },
     
 	{ 0,                       XF86XK_AudioNext,      spawn,    {.v = playernextcmd } },
     { 0,                       XF86XK_AudioPrev,      spawn,          {.v = playerprevcmd } },
@@ -97,15 +99,17 @@ static Key keys[] = {
 	{ MODKEY,                       XK_t, spawn,          {.v = termcmd } },
     { MODKEY,                       XK_e,      spawn,          {.v = filecmd } },
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
-	{ MODKEY,                       XK_a,      focusstackvis,  {.i = +1 } },
+	{ MODKEY,                       XK_d,      focusstackvis,  {.i = +1 } },
 	{ MODKEY,                       XK_Tab,      focusstackvis,  {.i = +1 } },
-	{ MODKEY,                       XK_d,      focusstackvis,  {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_a,      focusstackhid,  {.i = +1 } },
-	{ MODKEY|ShiftMask,             XK_d,      focusstackhid,  {.i = -1 } },
+	{ MODKEY,                       XK_a,      focusstackvis,  {.i = -1 } },
+	{ MODKEY|ShiftMask,             XK_Left,      focusstackhid,  {.i = +1 } },
+	{ MODKEY|ShiftMask,             XK_Right,      focusstackhid,  {.i = -1 } },
 	{ MODKEY,                       XK_h,      incnmaster,     {.i = +1 } },
 	{ MODKEY,                       XK_v,      incnmaster,     {.i = -1 } },
-	{ MODKEY|ShiftMask,             XK_Left,   setmfact,       {.f = -0.05} },
-	{ MODKEY|ShiftMask,             XK_Right,  setmfact,       {.f = +0.05} },
+	{ MODKEY|ShiftMask,             XK_a,   setmfact,       {.f = -0.05} },
+	{ MODKEY|ShiftMask,             XK_d,  setmfact,       {.f = +0.05} },
+    { MODKEY|ShiftMask,             XK_s,   setsmfact,       {.f = -0.05} },
+	{ MODKEY|ShiftMask,             XK_w,  setsmfact,       {.f = +0.05} },
 	{ MODKEY,                       XK_z,      zoom,           {0} },
 	{ MODKEY,                       XK_sacute,    view,           {0} },
 	{ MODKEY,                       XK_c,      killclient,     {0} },
@@ -120,8 +124,8 @@ static Key keys[] = {
 	{ MODKEY,                       XK_period, focusmon,       {.i = +1 } },
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
-	{ MODKEY,                       XK_s,      show,           {0} },
-	{ MODKEY,                       XK_h,      hide,           {0} },
+	{ MODKEY|ShiftMask,                       XK_s,      show,           {0} },
+	{ MODKEY|ShiftMask,                       XK_h,      hide,           {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
