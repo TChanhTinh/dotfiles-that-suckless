@@ -1,6 +1,11 @@
 A DWM setup and dotfiles for minimalist
 <p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/cringe/main/2021-02-20-133426_1366x768_scrot.png"/></p>
 
+# How to install DWM:
+[Dwm README](https://github.com/TChanhTinh/dotfiles-that-suckless/blob/main/dwm-6.2/README)
+
+[Dwmblock README](https://github.com/TChanhTinh/dotfiles-that-suckless/blob/main/dwmblock/README)
+
 # Arch Linux install dependencies:
 ```
 $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip lxpolkit NetworkManager scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync wireless_tools dunst rofi 
