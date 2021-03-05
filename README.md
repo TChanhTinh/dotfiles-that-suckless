@@ -19,7 +19,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 * Notify Daemon: Dunst
 * Application Launcher: Rofi
 * File Manager: Thunar
-* GUI & CLI IDE: Geany
+* GUI & CLI IDE: Geany, Code-OSS, Vim
 
 # DWM patches:
 * dwmblock
