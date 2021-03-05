@@ -1,0 +1,60 @@
+#-------------------------------------------------------------------------#
+# owl4ce/dotfiles global variables - tchanhtinh fork                      #
+#-------------------------------------------------------------------------#
+
+DWM_DIR="$HOME/.dwm"
+SCRIPTS_DIR="$DWM_DIR/scripts"
+DUNST_DIR="$HOME/.config/dunst"
+ROFI_DIR="$HOME/.config/rofi"
+
+WALL_DIR="$HOME/.wallpaper"
+CURRENT_WALL="$DWM_DIR/wall"
+
+DEFAPPS_FILE="$DWM_DIR/default-apps/list"
+ICON_GLADIENT_DIR="$HOME/.icons/gladient"
+
+NOTIF_WALLY_ICON="$ICON_GLADIENT_DIR/wally.png"
+NOTIF_MUSIC_ICON="$ICON_GLADIENT_DIR/music.png"
+NOTIF_SS_ICON="$ICON_GLADIENT_DIR/shot.png"
+
+EXNOTIFY_SEND="$SCRIPTS_DIR/notify/notify-send.sh"
+BRIGHTNESS_HANDLER="$NOTIFY_DIR/change-brightness"
+AVOLUME_CHANGER="$NOTIFY_DIR/change-volume"
+MUSIC_CONTROLLER="$SCRIPTS_DIR/music-controller"
+SS_NOW="$SCRIPTS_DIR/shot-now"
+SS_DRAW="$SCRIPTS_DIR/shot-seldraw"
+SS_TIMER="$SCRIPTS_DIR/shot-timer"
+
+#-------------------------------------------------------------------------#
+# Device name                                                       #
+#-------------------------------------------------------------------------#
+
+INT_ETH="enp2s0"
+INT_WIFI="wlan0"
+TEMP_DEV="thermal_zone0"
+
+#-------------------------------------------------------------------------#
+# This will create "Screenshots" folder inside SAVE_DIR                   #
+#-------------------------------------------------------------------------#
+
+TIMER_SEC="5"
+SAVE_DIR="$HOME/Pictures"
+FRAME_COLOR="#ffffff" # RGBA supported
+COPY_FRAMED="yes" # Copy the latest framed screenshot to clipboard
+OPEN_FRAMED="no" # Open after framed screenshot with viewnior (if exist)
+FRAMED_SHADOW_OPACITY="25" # 0-100, high value means thick shadows
+QUALITY="100" # 1-100, high value means high size with low compression
+
+#-------------------------------------------------------------------------#
+# XAUTOLOCK - 5 means 5 minutes                                           #
+#-------------------------------------------------------------------------#
+
+AUTOLOCK_MINUTE="15"
+
+#-------------------------------------------------------------------------#
+# BRIGHTNESS & AUDIO (pulseaudio) VOLUME STEPS LEVEL                      #
+#-------------------------------------------------------------------------#
+
+AUDIO_STEPS="5" # Real value
+BRIGHTNESS_STEPS="5" # Percentage, 5 means 5%
+

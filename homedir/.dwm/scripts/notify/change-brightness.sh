@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source $HOME/.owl4ce_var
+source $HOME/.dotfiles_var
 
 noterr() { $EXNOTIFY_SEND -u low -r 16 "Install brightnessctl!"; exit 1; }
 command -v "brightnessctl" > /dev/null 2>&1 || noterr

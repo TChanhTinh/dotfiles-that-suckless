@@ -2009,9 +2009,6 @@ tile(Monitor *m)
 			resize(c, m->wx + gappx, m->wy + my, mw - (2*c->bw) - gappx*(5-ns)/2, h - (2*c->bw), False);
 			my += HEIGHT(c) + gappx;
 		} else {
-			//h = (m->wh - ty) / (n - i) - gappx;
-			//resize(c, m->wx + mw + gappx/ns, m->wy + ty, m->ww - mw - (2*c->bw) - gappx*(5-ns)/2, h - (2*c->bw), False);
-			//ty += HEIGHT(c) + gappx;
 			smh = m->mh * m->smfact;
 			if(!(nexttiled(c->next)))
 				h = (m->wh - ty) / (n - i) - gappx;

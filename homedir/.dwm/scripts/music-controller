@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-source $HOME/.owl4ce_var
+source $HOME/.dotfiles_var
 
 CURRENT_MUSICPL="$($DEFAPPS_EXEC -g musicpl)"
 
