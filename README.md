@@ -4,7 +4,7 @@ A DWM setup and dotfiles for minimalist
 # How to install DWM:
 [Dwm README](https://github.com/TChanhTinh/dotfiles-that-suckless/blob/main/dwm-6.2/README)
 
-[Dwmblock README](https://github.com/TChanhTinh/dotfiles-that-suckless/blob/main/dwmblock/README)
+[Dwmblocks README](https://github.com/TChanhTinh/dotfiles-that-suckless/blob/main/dwmblocks/README.md)
 
 # Arch Linux install dependencies:
 ```
