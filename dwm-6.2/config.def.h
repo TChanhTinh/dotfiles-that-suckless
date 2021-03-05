@@ -74,7 +74,7 @@ static const char *playerstopcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-c
 static const char *playertogglecmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller toggle", NULL };
 static const char *screenshotcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/shot-now", NULL };
 static const char *screenshotdrwcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/shot-seldraw", NULL };
-static const char *termcmd[]  = { "urxvt", NULL };
+static const char *termcmd[]  = { "termite", NULL };
 static const char *filecmd[] = { "thunar", NULL };
 
 #include <X11/XF86keysym.h>
