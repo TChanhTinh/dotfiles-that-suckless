@@ -1,4 +1,4 @@
-This is a fork of cringe repository of Owl4ce with additional status indicator and new tags label
+A DWM setup and dotfiles for minimalist
 <p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/cringe/main/2021-02-20-133426_1366x768_scrot.png"/></p>
 
 # Arch Linux install dependencies:
@@ -59,4 +59,4 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 | `Super + Shift + R` | Reload DWM |
 | `Super + Shift + Q` | Quit DWM |
 
-The scripts are taken from owl4ce/dotfiles repository and modified
+Thank owl4ce for scripts and color scheme
