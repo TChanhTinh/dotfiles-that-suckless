@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/Justminor.full.1537571.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#131012",
+        "foreground": "#9dc6d3",
+        "cursor": "#9dc6d3"
+    },
+    "colors": {
+        "color0": "#131012",
+        "color1": "#073C84",
+        "color2": "#0C4D8C",
+        "color3": "#1B6EA0",
+        "color4": "#51718F",
+        "color5": "#1B8CAF",
+        "color6": "#2D8FB4",
+        "color7": "#9dc6d3",
+        "color8": "#6d8a93",
+        "color9": "#073C84",
+        "color10": "#0C4D8C",
+        "color11": "#1B6EA0",
+        "color12": "#51718F",
+        "color13": "#1B8CAF",
+        "color14": "#2D8FB4",
+        "color15": "#9dc6d3"
+    }
+}

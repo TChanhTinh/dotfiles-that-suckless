@@ -11,17 +11,19 @@ static const int horizpadbar        = -7;        /* horizontal padding for statu
 static const int vertpadbar         = 7;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "Font Awesome 5 Free:size=13", "Font Awesome 5 Free:size=11" };
 static const char dmenufont[]       = "Font Awesome 5 Free:size=13";
-static const char col_gray1[]       = "#3B4252";
+/*static const char col_gray1[]       = "#3B4252";
 static const char col_gray2[]       = "#434C5E";
 static const char col_gray3[]       = "#E6BAFF";
 static const char col_gray4[]       = "#F9F9F9";
 static const char col_cyan[]        = "#FA5AA4";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+/*	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
 	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
 	[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
-};
+};*/
+
+#include "/home/tchanhtinh/.cache/wal/colors-wal-dwm.h"
 
 /* tagging */
 static const char *tags[] = { "₁", "₂", "₃", "₄", "₅" };
@@ -74,7 +76,7 @@ static const char *playerstopcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-c
 static const char *playertogglecmd[] = { "bash", "-c", "$HOME/.dwm/scripts/music-controller toggle", NULL };
 static const char *screenshotcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/shot-now", NULL };
 static const char *screenshotdrwcmd[] = { "bash", "-c", "$HOME/.dwm/scripts/shot-seldraw", NULL };
-static const char *termcmd[]  = { "termite", NULL };
+static const char *termcmd[]  = { "kitty", NULL };
 static const char *filecmd[] = { "thunar", NULL };
 
 #include <X11/XF86keysym.h>
@@ -158,4 +160,3 @@ static Button buttons[] = {
 	{ ClkTagBar,            MODKEY,         Button1,        tag,            {0} },
 	{ ClkTagBar,            MODKEY,         Button3,        toggletag,      {0} },
 };
-

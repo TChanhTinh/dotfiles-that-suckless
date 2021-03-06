@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/flower_FHD.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#23252e",
+        "foreground": "#dbbfd3",
+        "cursor": "#dbbfd3"
+    },
+    "colors": {
+        "color0": "#23252e",
+        "color1": "#C55674",
+        "color2": "#A88973",
+        "color3": "#AE6691",
+        "color4": "#C86B9D",
+        "color5": "#CF7FC1",
+        "color6": "#B28FB0",
+        "color7": "#dbbfd3",
+        "color8": "#998593",
+        "color9": "#C55674",
+        "color10": "#A88973",
+        "color11": "#AE6691",
+        "color12": "#C86B9D",
+        "color13": "#CF7FC1",
+        "color14": "#B28FB0",
+        "color15": "#dbbfd3"
+    }
+}

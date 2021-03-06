@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/batik_4K.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#151a24",
+        "foreground": "#e6e6e7",
+        "cursor": "#e6e6e7"
+    },
+    "colors": {
+        "color0": "#151a24",
+        "color1": "#817E86",
+        "color2": "#7D828E",
+        "color3": "#90939C",
+        "color4": "#ADAEB4",
+        "color5": "#BCBEC3",
+        "color6": "#CFCFD2",
+        "color7": "#e6e6e7",
+        "color8": "#a1a1a1",
+        "color9": "#817E86",
+        "color10": "#7D828E",
+        "color11": "#90939C",
+        "color12": "#ADAEB4",
+        "color13": "#BCBEC3",
+        "color14": "#CFCFD2",
+        "color15": "#e6e6e7"
+    }
+}

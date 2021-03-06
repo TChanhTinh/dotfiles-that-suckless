@@ -11,5 +11,4 @@ source $HOME/.dotfiles_var
     dunst -conf $HOME/.config/dunst/dunstrc &
     lxpolkit &> /dev/null &
     ibus-daemon -drx &
-
 } &> /dev/null

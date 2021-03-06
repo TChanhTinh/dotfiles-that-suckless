@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/autumn_3K.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#252c37",
+        "foreground": "#d4c5d5",
+        "cursor": "#d4c5d5"
+    },
+    "colors": {
+        "color0": "#252c37",
+        "color1": "#C16568",
+        "color2": "#BD8B73",
+        "color3": "#695F90",
+        "color4": "#B05995",
+        "color5": "#C1618D",
+        "color6": "#BB79C1",
+        "color7": "#d4c5d5",
+        "color8": "#948995",
+        "color9": "#C16568",
+        "color10": "#BD8B73",
+        "color11": "#695F90",
+        "color12": "#B05995",
+        "color13": "#C1618D",
+        "color14": "#BB79C1",
+        "color15": "#d4c5d5"
+    }
+}

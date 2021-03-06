@@ -27,7 +27,18 @@ NC='\e[0m'
             # Write selected
             selected="$(echo "$IMG" | awk -F'wallpaper/' '{print $2}')"
             echo "$selected" > $CURRENT_WALL
-            echo "$selected > $CURRENT_WALL"
+            wal -i $WALL_DIR/$selected
+            
+            #Sync Xresources colorscheme
+            cat "$HOME/.cache/wal/colors.Xresources" > "$HOME/.Xresources"
+            
+            #Sync termite colorscheme
+            sed "100 r $HOME/.cache/wal/colors-kitty.conf" $HOME/.config/kitty/kitty.setting > $HOME/.config/kitty/kitty.conf
+            
+            #Wpgtk
+            wpg -a $WALL_DIR/$selected
+            wpg -s $selected
+            
             printf "\n${C}Selected wallpaper: ${NC}$selected\n"
             # Notify success
             $EXNOTIFY_SEND -r 99 -u low -i $NOTIF_WALLY_ICON "Wallpaper" "Applied: <u>$selected</u>"

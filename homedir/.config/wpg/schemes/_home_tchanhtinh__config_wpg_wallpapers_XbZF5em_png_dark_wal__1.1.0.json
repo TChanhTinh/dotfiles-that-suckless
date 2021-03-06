@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/XbZF5em.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#262725",
+        "foreground": "#f3f3de",
+        "cursor": "#f3f3de"
+    },
+    "colors": {
+        "color0": "#262725",
+        "color1": "#5A9AA9",
+        "color2": "#A0AC9A",
+        "color3": "#BBC2AA",
+        "color4": "#FBE985",
+        "color5": "#EEE1A0",
+        "color6": "#D6EADA",
+        "color7": "#f3f3de",
+        "color8": "#aaaa9b",
+        "color9": "#5A9AA9",
+        "color10": "#A0AC9A",
+        "color11": "#BBC2AA",
+        "color12": "#FBE985",
+        "color13": "#EEE1A0",
+        "color14": "#D6EADA",
+        "color15": "#f3f3de"
+    }
+}

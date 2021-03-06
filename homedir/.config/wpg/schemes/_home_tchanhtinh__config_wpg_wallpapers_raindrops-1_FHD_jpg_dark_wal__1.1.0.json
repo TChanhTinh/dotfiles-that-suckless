@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/raindrops-1_FHD.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#21252e",
+        "foreground": "#c0d2ea",
+        "cursor": "#c0d2ea"
+    },
+    "colors": {
+        "color0": "#21252e",
+        "color1": "#3B5686",
+        "color2": "#536A93",
+        "color3": "#6688B3",
+        "color4": "#79A4D5",
+        "color5": "#99ACD5",
+        "color6": "#BBBAD3",
+        "color7": "#c0d2ea",
+        "color8": "#8693a3",
+        "color9": "#3B5686",
+        "color10": "#536A93",
+        "color11": "#6688B3",
+        "color12": "#79A4D5",
+        "color13": "#99ACD5",
+        "color14": "#BBBAD3",
+        "color15": "#c0d2ea"
+    }
+}
