@@ -17,7 +17,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 # My Setup: 
 * Window Manager: DWM
 * Shell: Zsh 
-* Terminal: Termite
+* Terminal: Kitty
 * Compositor: Picom
 * Notify Daemon: Dunst
 * Application Launcher: Rofi
