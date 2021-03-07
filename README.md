@@ -12,7 +12,7 @@ Now using Pywal & Wpgtk to change color scheme match wallpaper with Wally script
 
 # Arch Linux install dependencies:
 ```
-$ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip lxpolkit NetworkManager scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync wireless_tools dunst rofi 
+$ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip lxpolkit NetworkManager scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync wireless_tools dunst rofi python-pywal wpgtk
 ```
 
 # My Setup: 
@@ -23,7 +23,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 * Notify Daemon: Dunst
 * Application Launcher: Rofi
 * File Manager: Thunar
-* GUI & CLI IDE: Geany, Code-OSS, Vim
+* GUI & CLI IDE: Code-OSS, Vim
 
 # DWM patches:
 * dwmblock
