@@ -29,9 +29,10 @@ static const Rule rules[] = {
 	 *	WM_CLASS(STRING) = instance, class
 	 *	WM_NAME(STRING) = title
 	 */
-	/* class      instance    title       tags mask     isfloating   monitor */
-	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* class      instance    title       tags mask		iscentered     isfloating   monitor */
+	{ "Gimp",     NULL,       NULL,       0,            	0,			1,           -1 },
+	{ "Firefox",  NULL,       NULL,       1 << 8,       	0,			0,           -1 },
+	{ "mpv",  NULL,       NULL,       1 << 8,       	0,			0,           -1 },
 };
 
 /* layout(s) */
@@ -123,7 +124,8 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_comma,  tagmon,         {.i = -1 } },
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY|ShiftMask,                       XK_s,      show,           {0} },
-	{ MODKEY|ShiftMask,                       XK_h,      hide,           {0} },
+	{ MODKEY|ShiftMask,                       XK_h,      hide,           {0} },	
+	{ MODKEY,                       XK_g,      center,           {0} },
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
