@@ -1,5 +1,9 @@
+# Currently WIP, only use it if you know what you're doing
 A DWM setup and dotfiles for minimalist
-<p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/cringe/main/2021-02-20-133426_1366x768_scrot.png"/></p>
+Now using Pywal & Wpgtk to change color scheme match wallpaper with Wally script (Need rebuild and restart Dwm)
+<p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/dotfiles-that-suckless/main/2021-03-06-150128_1366x768_scrot.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/dotfiles-that-suckless/main/2021-03-06-144835_1366x768_scrot.png"/></p>
+<p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/dotfiles-that-suckless/main/2021-03-06-145952_1366x768_scrot.png"/></p>
 
 # How to install DWM:
 [Dwm README](https://github.com/TChanhTinh/dotfiles-that-suckless/blob/main/dwm-6.2/README)
@@ -14,7 +18,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 # My Setup: 
 * Window Manager: DWM
 * Shell: Zsh 
-* Terminal: Termite
+* Terminal: Kitty
 * Compositor: Picom
 * Notify Daemon: Dunst
 * Application Launcher: Rofi
