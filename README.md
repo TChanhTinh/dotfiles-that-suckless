@@ -37,6 +37,8 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 * dwmblocks-statuscmd
 * setsmfact
 * alpha
+* center
+* center-keybind (https://gitea.com/fake_larry/dwm/src/branch/patch/6.2/center)
 
 # Keybind:
 | Key | Option  |
