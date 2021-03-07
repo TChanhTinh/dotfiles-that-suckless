@@ -39,7 +39,13 @@ NC='\e[0m'
             wpg -a $WALL_DIR/$selected
             wpg -s $selected
             
+            #Restart dunst
+            dunst -conf $HOME/.config/dunst/dunstrc &
+            
             printf "\n${C}Selected wallpaper: ${NC}$selected\n"
             # Notify success
             $EXNOTIFY_SEND -r 99 -u low -i $NOTIF_WALLY_ICON "Wallpaper" "Applied: <u>$selected</u>"
+            
+            #Rebuild DWM
+            cd "$HOME/Projects/cringe/dwm-6.2" && sudo make clean install
         fi

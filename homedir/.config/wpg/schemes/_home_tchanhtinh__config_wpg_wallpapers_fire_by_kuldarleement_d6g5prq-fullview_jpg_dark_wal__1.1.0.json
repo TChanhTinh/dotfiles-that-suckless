@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/fire_by_kuldarleement_d6g5prq-fullview.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0e0307",
+        "foreground": "#d7b8af",
+        "cursor": "#d7b8af"
+    },
+    "colors": {
+        "color0": "#0e0307",
+        "color1": "#716956",
+        "color2": "#7C7964",
+        "color3": "#B03B2B",
+        "color4": "#897661",
+        "color5": "#8A8672",
+        "color6": "#A88772",
+        "color7": "#d7b8af",
+        "color8": "#96807a",
+        "color9": "#716956",
+        "color10": "#7C7964",
+        "color11": "#B03B2B",
+        "color12": "#897661",
+        "color13": "#8A8672",
+        "color14": "#A88772",
+        "color15": "#d7b8af"
+    }
+}

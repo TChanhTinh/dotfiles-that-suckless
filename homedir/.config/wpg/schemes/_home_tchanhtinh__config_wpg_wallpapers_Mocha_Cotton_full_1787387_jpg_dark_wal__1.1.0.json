@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/Mocha.Cotton.full.1787387.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#010A1B",
+        "foreground": "#85a6c0",
+        "cursor": "#85a6c0"
+    },
+    "colors": {
+        "color0": "#010A1B",
+        "color1": "#172A47",
+        "color2": "#0E3866",
+        "color3": "#244B6B",
+        "color4": "#595252",
+        "color5": "#6C857D",
+        "color6": "#E1C037",
+        "color7": "#85a6c0",
+        "color8": "#5d7486",
+        "color9": "#172A47",
+        "color10": "#0E3866",
+        "color11": "#244B6B",
+        "color12": "#595252",
+        "color13": "#6C857D",
+        "color14": "#E1C037",
+        "color15": "#85a6c0"
+    }
+}

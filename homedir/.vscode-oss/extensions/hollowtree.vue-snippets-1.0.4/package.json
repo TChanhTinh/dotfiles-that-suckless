@@ -1,0 +1,104 @@
+{
+	"name": "vue-snippets",
+	"displayName": "Vue 3 Snippets",
+	"author": "hollowtree",
+	"publisher": "hollowtree",
+	"icon": "img/logo.png",
+	"description": "A Vue.js 3 And Vue.js 2 Code Snippets Extension",
+	"license": "MIT",
+	"version": "1.0.4",
+	"scripts": {
+		"build": "vsce package"
+	},
+	"engines": {
+		"vscode": "^1.5.0"
+	},
+	"keywords": [
+		"javascript",
+		"html",
+		"vue",
+		"vscode",
+		"snippet",
+		"api",
+		"reactivity",
+		"composition",
+		"function",
+		"syntax",
+		"template ",
+		"vuejs",
+		"vue.js",
+		"vue2",
+		"vue3",
+		"vue 2 snippet",
+		"vue 3 snippet"
+	],
+	"categories": [
+		"Programming Languages",
+		"Snippets"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/hollowtree/vscode-vue-snippets"
+	},
+	"bugs": {
+		"url": "https://github.com/hollowtree/vscode-vue-snippets/issues",
+		"email": "smalltree@outlook.com"
+	},
+	"contributes": {
+		"languages": [
+			{
+				"id": "vue",
+				"aliases": [
+					"Vue",
+					"vue"
+				],
+				"extensions": [
+					".vue"
+				]
+			}
+		],
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "vue-html",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/javascript.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/html.json"
+			},
+			{
+				"language": "vue",
+				"path": "./snippets/vue.json"
+			},
+			{
+				"language": "jade",
+				"path": "./snippets/pug.json"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "3620b114-6fe8-459b-8c68-99943147069b",
+		"publisherId": "8d711594-469c-48e6-b07c-32197084b71c",
+		"publisherDisplayName": "hollowtree"
+	}
+}

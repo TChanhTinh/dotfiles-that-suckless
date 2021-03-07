@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/Amemura.full.335914.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0f1c48",
+        "foreground": "#e0edf2",
+        "cursor": "#e0edf2"
+    },
+    "colors": {
+        "color0": "#0f1c48",
+        "color1": "#2C73CC",
+        "color2": "#439BDB",
+        "color3": "#609ED9",
+        "color4": "#93ADD1",
+        "color5": "#A8D9F0",
+        "color6": "#C8DAEC",
+        "color7": "#e0edf2",
+        "color8": "#9ca5a9",
+        "color9": "#2C73CC",
+        "color10": "#439BDB",
+        "color11": "#609ED9",
+        "color12": "#93ADD1",
+        "color13": "#A8D9F0",
+        "color14": "#C8DAEC",
+        "color15": "#e0edf2"
+    }
+}

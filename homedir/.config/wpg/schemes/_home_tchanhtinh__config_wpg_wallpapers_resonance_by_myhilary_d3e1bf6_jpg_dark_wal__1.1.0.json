@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/resonance_by_myhilary_d3e1bf6.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#979747",
+        "foreground": "#e0f1f4",
+        "cursor": "#e0f1f4"
+    },
+    "colors": {
+        "color0": "#979747",
+        "color1": "#C3D3A7",
+        "color2": "#9AB4DC",
+        "color3": "#F5A8E2",
+        "color4": "#B6D1F0",
+        "color5": "#A0F0F6",
+        "color6": "#D7D9EA",
+        "color7": "#e0f1f4",
+        "color8": "#9ca8aa",
+        "color9": "#C3D3A7",
+        "color10": "#9AB4DC",
+        "color11": "#F5A8E2",
+        "color12": "#B6D1F0",
+        "color13": "#A0F0F6",
+        "color14": "#D7D9EA",
+        "color15": "#e0f1f4"
+    }
+}

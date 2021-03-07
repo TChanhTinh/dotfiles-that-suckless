@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/EJYSDKW.jpeg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#2f3b47",
+        "foreground": "#dfedf1",
+        "cursor": "#dfedf1"
+    },
+    "colors": {
+        "color0": "#2f3b47",
+        "color1": "#ADD89B",
+        "color2": "#D5C8B7",
+        "color3": "#9BB1CD",
+        "color4": "#ACD2DE",
+        "color5": "#B3D7ED",
+        "color6": "#E4DADC",
+        "color7": "#dfedf1",
+        "color8": "#9ca5a8",
+        "color9": "#ADD89B",
+        "color10": "#D5C8B7",
+        "color11": "#9BB1CD",
+        "color12": "#ACD2DE",
+        "color13": "#B3D7ED",
+        "color14": "#E4DADC",
+        "color15": "#dfedf1"
+    }
+}

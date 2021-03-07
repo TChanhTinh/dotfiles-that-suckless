@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/rainbow_by_myhilary_d2zl3d7.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#364251",
+        "foreground": "#dff0f5",
+        "cursor": "#dff0f5"
+    },
+    "colors": {
+        "color0": "#364251",
+        "color1": "#A1E4D8",
+        "color2": "#94D5FC",
+        "color3": "#ABD7FC",
+        "color4": "#B3E5FD",
+        "color5": "#FBF9CF",
+        "color6": "#E7D7F0",
+        "color7": "#dff0f5",
+        "color8": "#9ca8ab",
+        "color9": "#A1E4D8",
+        "color10": "#94D5FC",
+        "color11": "#ABD7FC",
+        "color12": "#B3E5FD",
+        "color13": "#FBF9CF",
+        "color14": "#E7D7F0",
+        "color15": "#dff0f5"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/landscape__29_by_sylar113_d7iuuw8.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#131922",
+        "foreground": "#d6d8d2",
+        "cursor": "#d6d8d2"
+    },
+    "colors": {
+        "color0": "#131922",
+        "color1": "#3956AC",
+        "color2": "#50768E",
+        "color3": "#69919D",
+        "color4": "#6692C6",
+        "color5": "#9FA69E",
+        "color6": "#90ACB0",
+        "color7": "#d6d8d2",
+        "color8": "#959793",
+        "color9": "#3956AC",
+        "color10": "#50768E",
+        "color11": "#69919D",
+        "color12": "#6692C6",
+        "color13": "#9FA69E",
+        "color14": "#90ACB0",
+        "color15": "#d6d8d2"
+    }
+}

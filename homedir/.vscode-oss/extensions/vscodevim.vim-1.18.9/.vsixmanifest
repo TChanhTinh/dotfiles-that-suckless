@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+  <Metadata>
+    <Identity Language="en-US" Id="vim" Version="1.18.9" Publisher="vscodevim"/>
+    <DisplayName>Vim</DisplayName>
+    <Description xml:space="preserve">Vim emulation for Visual Studio Code</Description>
+    <Tags>vim,vi,vscodevim,keybindings,vimrc,__ext_vimrc,__web_extension</Tags>
+    <Categories>Other,Keymaps</Categories>
+    <GalleryFlags>Public</GalleryFlags>
+    <Badges></Badges>
+    <Properties>
+      <Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.42.0" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+      <Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="ui,web,workspace" />
+      <Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+      
+        <Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/VSCodeVim/Vim.git" />
+        <Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/VSCodeVim/Vim.git" />
+        
+          <Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/VSCodeVim/Vim.git" />
+        
+      
+      <Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/VSCodeVim/Vim/issues" />
+      <Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/VSCodeVim/Vim" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#e3f4ff" />
+      <Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="light" />
+      <Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+      
+      <Property Id="Microsoft.VisualStudio.Services.CustomerQnALink" Value="https://vscodevim.herokuapp.com/" />
+      <Property Id="Microsoft.VisualStudio.Code.WebExtension" Value="true" />
+    </Properties>
+    <License>extension/LICENSE.txt</License>
+    <Icon>extension/images/icon.png</Icon>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+  </Installation>
+  <Dependencies/>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+    <Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/images/icon.png" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/package.json" Path="extension/package.json" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/images/icon.png" Path="extension/images/icon.png" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/language-configuration.json" Path="extension/language-configuration.json" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/LICENSE.txt" Path="extension/LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/out/extension.js" Path="extension/out/extension.js" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/out/extension.js.LICENSE.txt" Path="extension/out/extension.js.LICENSE.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/out/extensionBase.js" Path="extension/out/extensionBase.js" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/out/extensionWeb.js" Path="extension/out/extensionWeb.js" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/out/package.json" Path="extension/out/package.json" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/out/version.txt" Path="extension/out/version.txt" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/ROADMAP.md" Path="extension/ROADMAP.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/ROADMAP.ZH.md" Path="extension/ROADMAP.ZH.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/STYLE.md" Path="extension/STYLE.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/syntaxes/vimrc.tmLanguage.json" Path="extension/syntaxes/vimrc.tmLanguage.json" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/webpack.dev.js" Path="extension/webpack.dev.js" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/README.md" Path="extension/README.md" Addressable="true" /><Asset Type="Microsoft.VisualStudio.Code.WebResources/extension/CHANGELOG.md" Path="extension/CHANGELOG.md" Addressable="true" />
+  </Assets>
+</PackageManifest>

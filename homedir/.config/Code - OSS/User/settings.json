@@ -1,0 +1,16 @@
+{
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": false,
+    "editor.minimap.enabled": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.associations": {
+    "*.env.development": "env",
+    "*.env.production": "env"
+},
+"workbench.colorTheme": "Wal Bordered"
+}

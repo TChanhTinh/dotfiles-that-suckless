@@ -1,29 +1,25 @@
 /* See LICENSE file for copyright and license details. */
+#include "/home/tchanhtinh/.cache/wal/colors-wal-dwm.h"
 
 /* appearance */
 static const unsigned int borderpx = 1;        /* border pixel of windows */
 static const unsigned int gappx    = 10;       /* gap pixel between windows */
 static const unsigned int snap     = 32;       /* snap pixel */
 static const unsigned int minwsz    = 0;
+static const unsigned int baralpha = 0xd0;
+static const unsigned int borderalpha = OPAQUE;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int horizpadbar        = -7;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 7;        /* vertical padding for statusbar */
 static const char *fonts[]          = { "Font Awesome 5 Free:size=13", "Font Awesome 5 Free:size=11" };
 static const char dmenufont[]       = "Font Awesome 5 Free:size=13";
-/*static const char col_gray1[]       = "#3B4252";
-static const char col_gray2[]       = "#434C5E";
-static const char col_gray3[]       = "#E6BAFF";
-static const char col_gray4[]       = "#F9F9F9";
-static const char col_cyan[]        = "#FA5AA4";
-static const char *colors[][3]      = {
-	/*               fg         bg         border   */
-/*	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
-	[SchemeSel]  = { col_gray4, col_cyan,  col_cyan  },
-	[SchemeHid]  = { col_cyan,  col_gray1, col_cyan  },
-};*/
 
-#include "/home/tchanhtinh/.cache/wal/colors-wal-dwm.h"
+static const unsigned int alphas[][3]      = {
+	/*               fg      bg        border     */
+	[SchemeNorm] = { OPAQUE, baralpha, borderalpha },
+	[SchemeSel]  = { OPAQUE, baralpha, borderalpha },
+};
 
 /* tagging */
 static const char *tags[] = { "₁", "₂", "₃", "₄", "₅" };

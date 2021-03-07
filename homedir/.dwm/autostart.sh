@@ -9,6 +9,6 @@ source $HOME/.dotfiles_var
     nitrogen --set-zoom-fill --save $WALL_DIR/$(cat $CURRENT_WALL) &
     picom -b &
     dunst -conf $HOME/.config/dunst/dunstrc &
-    lxpolkit &> /dev/null &
+    #lxpolkit &> /dev/null &
     ibus-daemon -drx &
 } &> /dev/null

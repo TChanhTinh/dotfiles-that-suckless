@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/rainbow_remix_by_myhilary_d33l6pk.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#0c050a",
+        "foreground": "#dff0f3",
+        "cursor": "#dff0f3"
+    },
+    "colors": {
+        "color0": "#0c050a",
+        "color1": "#5EA7D8",
+        "color2": "#6BDAF3",
+        "color3": "#E3F3A8",
+        "color4": "#ABB1CB",
+        "color5": "#A3E2EE",
+        "color6": "#DCE9D8",
+        "color7": "#dff0f3",
+        "color8": "#9ca8aa",
+        "color9": "#5EA7D8",
+        "color10": "#6BDAF3",
+        "color11": "#E3F3A8",
+        "color12": "#ABB1CB",
+        "color13": "#A3E2EE",
+        "color14": "#DCE9D8",
+        "color15": "#dff0f3"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/stellar_collision_by_kuldarleement_d6kvnyd-fullview.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#091234",
+        "foreground": "#9bd0dc",
+        "cursor": "#9bd0dc"
+    },
+    "colors": {
+        "color0": "#091234",
+        "color1": "#2D4C8E",
+        "color2": "#2067AC",
+        "color3": "#5A5F92",
+        "color4": "#1A79C2",
+        "color5": "#956F91",
+        "color6": "#1C9ACF",
+        "color7": "#9bd0dc",
+        "color8": "#6c919a",
+        "color9": "#2D4C8E",
+        "color10": "#2067AC",
+        "color11": "#5A5F92",
+        "color12": "#1A79C2",
+        "color13": "#956F91",
+        "color14": "#1C9ACF",
+        "color15": "#9bd0dc"
+    }
+}

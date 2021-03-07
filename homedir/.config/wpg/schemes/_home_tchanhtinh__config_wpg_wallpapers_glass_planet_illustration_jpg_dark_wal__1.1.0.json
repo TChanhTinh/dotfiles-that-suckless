@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/glass_planet_illustration.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#070732",
+        "foreground": "#cfdfe1",
+        "cursor": "#cfdfe1"
+    },
+    "colors": {
+        "color0": "#070732",
+        "color1": "#6A308C",
+        "color2": "#0D0AEB",
+        "color3": "#8C3B97",
+        "color4": "#9E459D",
+        "color5": "#CC55D3",
+        "color6": "#71ABCE",
+        "color7": "#cfdfe1",
+        "color8": "#909c9d",
+        "color9": "#6A308C",
+        "color10": "#0D0AEB",
+        "color11": "#8C3B97",
+        "color12": "#9E459D",
+        "color13": "#CC55D3",
+        "color14": "#71ABCE",
+        "color15": "#cfdfe1"
+    }
+}

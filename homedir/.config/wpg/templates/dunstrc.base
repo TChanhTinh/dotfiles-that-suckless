@@ -1,6 +1,6 @@
 [colors]
 	background = "{color0}"
-	foreground = "{color0}"
+	foreground = "{color15}"
 
 [global]
 title = Dunst

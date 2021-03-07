@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/pliiSRJ.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#251922",
+        "foreground": "#efdcc4",
+        "cursor": "#efdcc4"
+    },
+    "colors": {
+        "color0": "#251922",
+        "color1": "#B0867A",
+        "color2": "#D59178",
+        "color3": "#597C89",
+        "color4": "#E65D8A",
+        "color5": "#BA9B97",
+        "color6": "#E7A29B",
+        "color7": "#efdcc4",
+        "color8": "#a79a89",
+        "color9": "#B0867A",
+        "color10": "#D59178",
+        "color11": "#597C89",
+        "color12": "#E65D8A",
+        "color13": "#BA9B97",
+        "color14": "#E7A29B",
+        "color15": "#efdcc4"
+    }
+}

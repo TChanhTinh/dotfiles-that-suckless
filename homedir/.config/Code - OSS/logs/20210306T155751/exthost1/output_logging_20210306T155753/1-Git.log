@@ -1,0 +1,23 @@
+Looking for git in: git
+Using git 2.30.1 from git
+> git rev-parse --git-dir
+Open repository: /home/tchanhtinh/Projects/cit
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template
+> git show --textconv :package.json
+> git ls-files --stage -- /home/tchanhtinh/Projects/cit/package.json
+> git check-ignore -v -z --stdin
+> git cat-file -s 40cc84d94c7e4e21dfe21e2a07d53b16d74eb163
+> git status -z -u
+> git ls-files --stage -- /home/tchanhtinh/Projects/cit/package.json
+> git cat-file -s 40cc84d94c7e4e21dfe21e2a07d53b16d74eb163
+> git show --textconv :package.json
+> git symbolic-ref --short HEAD
+> git for-each-ref --format=%(refname)%00%(upstream:short)%00%(upstream:track)%00%(objectname) refs/heads/master refs/remotes/master
+> git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname)
+> git remote --verbose
+> git config --get commit.template

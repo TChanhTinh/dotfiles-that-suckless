@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/Amongtrees-4.png",
+    "alpha": "100",
+
+    "special": {
+        "background": "#00032F",
+        "foreground": "#d8ded6",
+        "cursor": "#d8ded6"
+    },
+    "colors": {
+        "color0": "#00032F",
+        "color1": "#5D6C8E",
+        "color2": "#97798F",
+        "color3": "#44A3B8",
+        "color4": "#66D5D3",
+        "color5": "#A1A0AB",
+        "color6": "#DEA199",
+        "color7": "#d8ded6",
+        "color8": "#979b95",
+        "color9": "#5D6C8E",
+        "color10": "#97798F",
+        "color11": "#44A3B8",
+        "color12": "#66D5D3",
+        "color13": "#A1A0AB",
+        "color14": "#DEA199",
+        "color15": "#d8ded6"
+    }
+}

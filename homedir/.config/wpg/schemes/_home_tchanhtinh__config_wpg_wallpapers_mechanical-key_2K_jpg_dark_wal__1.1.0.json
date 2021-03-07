@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/tchanhtinh/.config/wpg/wallpapers/mechanical-key_2K.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#1f252f",
+        "foreground": "#d3d4d7",
+        "cursor": "#d3d4d7"
+    },
+    "colors": {
+        "color0": "#1f252f",
+        "color1": "#606A8F",
+        "color2": "#937584",
+        "color3": "#6892AA",
+        "color4": "#6FA8C1",
+        "color5": "#9297A5",
+        "color6": "#B0B1B8",
+        "color7": "#d3d4d7",
+        "color8": "#939496",
+        "color9": "#606A8F",
+        "color10": "#937584",
+        "color11": "#6892AA",
+        "color12": "#6FA8C1",
+        "color13": "#9297A5",
+        "color14": "#B0B1B8",
+        "color15": "#d3d4d7"
+    }
+}
