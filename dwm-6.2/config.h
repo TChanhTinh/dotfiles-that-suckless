@@ -6,7 +6,7 @@ static const unsigned int borderpx = 1;        /* border pixel of windows */
 static const unsigned int gappx    = 10;       /* gap pixel between windows */
 static const unsigned int snap     = 32;       /* snap pixel */
 static const unsigned int minwsz    = 0;
-static const unsigned int baralpha = 0xd0;
+static const unsigned int baralpha = 50;
 static const unsigned int borderalpha = OPAQUE;
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
@@ -125,8 +125,10 @@ static Key keys[] = {
 	{ MODKEY|ShiftMask,             XK_period, tagmon,         {.i = +1 } },
 	{ MODKEY|ShiftMask,                       XK_s,      show,           {0} },
 	{ MODKEY|ShiftMask,                       XK_h,      hide,           {0} },	
-	{ MODKEY,                       XK_g,      togglefloating,           {0} },	
+	{ MODKEY,                       XK_f,      togglefloating,           {0} },	
 	{ MODKEY,                       XK_g,      center,           {0} },	
+	{ MODKEY|ShiftMask,                       XK_g,      togglefloating,           {0} },	
+	{ MODKEY|ShiftMask,                       XK_g,      center,           {0} },	
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
