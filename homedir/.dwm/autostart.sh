@@ -7,7 +7,7 @@ source $HOME/.dotfiles_var
     mpd &
     pulseaudio --start &
     nitrogen --set-zoom-fill --save $WALL_DIR/$(cat $CURRENT_WALL) &
-    picom -b &
+    picom -c -b &
     dunst -conf $HOME/.config/dunst/dunstrc &
     #lxpolkit &> /dev/null &
     ibus-daemon -drx &
