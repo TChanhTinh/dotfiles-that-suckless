@@ -53,6 +53,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 | `Super + Z` | Zoom window |
 | `Super + A` | Switch to left window |
 | `Super + D` | Switch to right window |
+| `Super + G` | Toggle floating window and centered it |
 | `Super + Tab` | Switch to right window |
 | `Super + Shift + A` | Expand right window |
 | `Super + Shift + D` | Expand left window |
