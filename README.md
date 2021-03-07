@@ -36,6 +36,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 * dwm-statuscmd-signal
 * dwmblocks-statuscmd
 * setsmfact
+* alpha
 
 # Keybind:
 | Key | Option  |
