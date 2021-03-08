@@ -1,3 +1,0 @@
-[2021-03-06 23:10:04.632] [renderer1] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/tchanhtinh/Projects/cringe/.vscode'
-[2021-03-06 23:10:27.584] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
-[2021-03-06 23:10:41.498] [renderer1] [error] An unknown error occurred. Please consult the log for more details.
