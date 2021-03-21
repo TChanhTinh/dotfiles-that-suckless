@@ -3,7 +3,7 @@
 
 /* appearance */
 static const unsigned int borderpx = 1;        /* border pixel of windows */
-static const unsigned int gappx    = 10;       /* gap pixel between windows */
+static const unsigned int gappx    = 7;       /* gap pixel between windows */
 static const unsigned int snap     = 32;       /* snap pixel */
 static const unsigned int minwsz    = 0;
 static const unsigned int baralpha = 50;
