@@ -71,4 +71,5 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 | `Super + Shift + R` | Reload DWM |
 | `Super + Shift + Q` | Quit DWM |
 
-Thank owl4ce for scripts and color scheme
+Thank owl4ce for base scripts.
+Feel free report any issue or new idea on this setup, forks are welcome!
