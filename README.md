@@ -1,4 +1,3 @@
-# Currently WIP, only use it if you know what you're doing
 A DWM setup and dotfiles for minimalist
 Now using Pywal & Wpgtk to change color scheme match wallpaper with Wally script (Need rebuild and restart Dwm)
 <p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/dotfiles-that-suckless/main/screenshots/2021-03-07-141305_1366x768_scrot.png"/></p>
