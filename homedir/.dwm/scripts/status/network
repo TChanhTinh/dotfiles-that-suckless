@@ -8,7 +8,7 @@ command -v {"ip","iw"} > /dev/null 2>&1 || noterr
 wifi=""
 wifi_noip=""
 wifi_disabled=""
-lan=""
+lan=""
 lan_noip=""
 void=""
 
@@ -28,7 +28,7 @@ get_network() {
         fi
     elif ip link show "$INT_ETH" &> /dev/null; then
         if ip addr show "$INT_ETH" | grep 'inet' &> /dev/null; then
-            status="$(echo "$(ip addr show "$INT_ETH" | grep 'inet' | awk -F'inet ' '{print $2}' | awk -F'/' '{print $1}' | head -n1)")"
+            status="Ethernet"
             icon="$(echo "$lan")"
         else
             status="$(echo "No IP address ("$INT_ETH")")"

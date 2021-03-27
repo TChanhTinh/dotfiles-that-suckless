@@ -1,0 +1,16 @@
+#!/bin/env bash
+raw_title=$(echo '{"command": ["get_property", "media-title"]}' | socat - "$HOME/.config/mpv/socket" | jq .data)
+title=$(echo $raw_title | cut -f1 -d '|' | sed 's/\[[^]]*\]//g' | sed 's/  \+//g' )
+title=$(echo $title | sed '
+s/Official / /g; s/ Official/ /g;
+s/Audio / /g; s/ Audio/ /g; 
+s/Lyric / /g; s/ Lyric/ /g;
+s/Video / /g; s/ Video/ /g;
+s/Music / /g; s/ Music / /g;
+s/MV/ /g;
+s/(  )//g;
+s/( )//g;
+s/()//g;
+s/"//g;
+')
+echo $title

@@ -5,7 +5,7 @@ source $HOME/.dotfiles_var
     xrdb $HOME/.Xresources
     dwmblocks  &
     mpd &
-    pulseaudio --start &
+    #pulseaudio --start &
     nitrogen --set-zoom-fill --save $WALL_DIR/$(cat $CURRENT_WALL) &
     picom -c -b &
     dunst -conf $HOME/.config/dunst/dunstrc &
