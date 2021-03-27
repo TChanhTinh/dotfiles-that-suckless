@@ -11,7 +11,7 @@ NC='\e[0m'
     n=0
     for img in $PLAYLIST_DIR/yt-playlist/*; do
         n="$((n+1))"
-        imgfilt="$(echo $img | grep -oE '[^/]+$' $1)"
+        imgfilt="$(echo $img | grep -oE '[^/]+$')"
         printf "${M}[${C}%s${M}] ${NC}%s\n" "$n" "$imgfilt"
         eval "img${n}=\$img"
     done
@@ -23,5 +23,5 @@ NC='\e[0m'
         exit 1
     else
         eval "IMG=\$img${num}"
-        mpv $(cat $IMG)
+        mpv $(cat $IMG) $@
     fi

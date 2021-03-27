@@ -127,11 +127,13 @@ alias trimall="$PRIV fstrim -va"
 alias nanosu="$PRIV nano"
 alias nvimsu="$PRIV nvim"
 alias refram="$PRIV bash -c \"sync; echo 3 > /proc/sys/vm/drop_caches\""
-alias ls="exa -lgh --icons --group-directories-first"
+#alias ls="exa -lgh --icons --group-directories-first"
 alias la="exa -lgha --icons --group-directories-first"
 alias wally="sh $HOME/.dwm/scripts/wally"
 alias listen='f() { ytfzf -t -m -l $@};f'
 alias watch='f() { ytfzf -t -l $@};f'
+alias add-playlist='f() { $HOME/.dwm/scripts/add-playlist $@};f'
+alias playlist='f() { $HOME/.dwm/scripts/play-playlist $@};f'
 
 # Color toys aliases
 alias bloks="~/.color-toys/bloks"
@@ -143,6 +145,7 @@ alias panes="~/.color-toys/panes"
 alias pipes1="~/.color-toys/pipes1"
 alias pipes2="~/.color-toys/pipes2"
 alias pipes2-slim="~/.color-toys/pipes2-slim"
+alias redwm="cd ~/Projects/cringe/dwm-6.2/ && sudo make clean install"
 
 export PATH=$HOME/.npm-packages/bin:$PATH
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"

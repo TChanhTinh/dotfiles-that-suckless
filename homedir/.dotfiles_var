@@ -6,6 +6,7 @@ DWM_DIR="$HOME/.dwm"
 SCRIPTS_DIR="$DWM_DIR/scripts"
 DUNST_DIR="$HOME/.config/dunst"
 ROFI_DIR="$HOME/.config/rofi"
+PLAYLIST_DIR="$HOME/.config/mpv"
 
 WALL_DIR="$HOME/.wallpaper"
 CURRENT_WALL="$DWM_DIR/wall"
@@ -32,6 +33,8 @@ SS_TIMER="$SCRIPTS_DIR/shot-timer"
 INT_ETH="enp2s0"
 INT_WIFI="wlan0"
 TEMP_DEV="thermal_zone0"
+BATTERY_DEV="BAT0"
+AC_DEV="AC0"
 
 #-------------------------------------------------------------------------#
 # This will create "Screenshots" folder inside SAVE_DIR                   #
