@@ -23,6 +23,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 * Application Launcher: Rofi
 * File Manager: Thunar
 * GUI & CLI IDE: Code-OSS, Vim
+* Music player: mpv
 
 # DWM patches:
 * dwmblock
