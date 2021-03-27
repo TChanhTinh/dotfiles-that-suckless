@@ -1,5 +1,4 @@
-# Currently WIP, only use it if you know what you're doing
-A DWM setup and dotfiles for minimalist
+# Clean & Suckless dotfiles
 Now using Pywal & Wpgtk to change color scheme match wallpaper with Wally script (Need rebuild and restart Dwm)
 <p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/dotfiles-that-suckless/main/screenshots/2021-03-07-141305_1366x768_scrot.png"/></p>
 <p align="center"><img src="https://raw.githubusercontent.com/TChanhTinh/dotfiles-that-suckless/main/screenshots/2021-03-07-141508_1366x768_scrot.png"/></p>
@@ -72,4 +71,5 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 | `Super + Shift + R` | Reload DWM |
 | `Super + Shift + Q` | Quit DWM |
 
-Thank owl4ce for scripts and color scheme
+Thank owl4ce for base scripts.
+Feel free report any issue or new idea on this setup, forks are welcome!
