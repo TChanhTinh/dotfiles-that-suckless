@@ -24,15 +24,16 @@ NC='\e[0m'
         else
             eval "IMG=\$img${num}"
             nitrogen --set-zoom-fill --save $IMG &> /dev/null
-            # Write selected
+            
+	    #Write selected
             selected="$(echo "$IMG" | awk -F'wallpaper/' '{print $2}')"
             echo "$selected" > $CURRENT_WALL
-            wal -i $WALL_DIR/$selected
+            wal --saturate 0.2 -i $WALL_DIR/$selected
             
             #Sync Xresources colorscheme
             cat "$HOME/.cache/wal/colors.Xresources" > "$HOME/.Xresources"
             
-            #Sync termite colorscheme
+            #Sync Kitty colorscheme
             sed "100 r $HOME/.cache/wal/colors-kitty.conf" $HOME/.config/kitty/kitty.setting > $HOME/.config/kitty/kitty.conf
             
             #Wpgtk

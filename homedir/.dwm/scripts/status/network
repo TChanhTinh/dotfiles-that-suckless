@@ -12,37 +12,33 @@ lan=""
 lan_noip=""
 void=""
 
-if [[ $(iw "$INT_WIFI" link) != "Not connected." ]]; then
-    if ip addr show "$INT_WIFI" | grep 'inet' &> /dev/null; then
+get_network() {
+    if [[ $(iw "$INT_WIFI" link) != "Not connected." ]]; then
         if ip addr show "$INT_WIFI" | grep 'inet' &> /dev/null; then
-            status="$(iw "$INT_WIFI" link | grep SSID | awk -F':' '{print $2}')"
-            icon="$(echo "$wifi")"
+            if ip addr show "$INT_WIFI" | grep 'inet' &> /dev/null; then
+                status="$(iw "$INT_WIFI" link | grep SSID | awk -F':' '{print $2}')"
+                icon="$(echo "$wifi")"
+            else
+                status="$(echo "No IP address ("$INT_WIFI")")"
+                icon="$(echo "$wifi_noip")"
+            fi
         else
-            status="$(echo "No IP address ("$INT_WIFI")")"
-            icon="$(echo "$wifi_noip")"
+            status="$(echo "Disconnected")"
+            icon="$(echo "$wifi_disabled")"
+        fi
+    elif ip link show "$INT_ETH" &> /dev/null; then
+        if ip addr show "$INT_ETH" | grep 'inet' &> /dev/null; then
+            status="$(echo "$(ip addr show "$INT_ETH" | grep 'inet' | awk -F'inet ' '{print $2}' | awk -F'/' '{print $1}' | head -n1)")"
+            icon="$(echo "$lan")"
+        else
+            status="$(echo "No IP address ("$INT_ETH")")"
+            icon="$(echo "$lan_noip")"
         fi
     else
-        status="$(echo "Disconnected")"
-        icon="$(echo "$wifi_disabled")"
+        status="$(echo "Network interface not found ("$INT_ETH";"$INT_WIFI")")"
+        icon="$(echo "$void")"
     fi
-elif ip link show "$INT_ETH" &> /dev/null; then
-    if ip addr show "$INT_ETH" | grep 'inet' &> /dev/null; then
-        status="$(echo "$(ip addr show "$INT_ETH" | grep 'inet' | awk -F'inet ' '{print $2}' | awk -F'/' '{print $1}' | head -n1) ("$INT_ETH")")"
-        icon="$(echo "$lan")"
-    else
-        status="$(echo "No IP address ("$INT_ETH")")"
-        icon="$(echo "$lan_noip")"
-    fi
-else
-    status="$(echo "Network interface not found ("$INT_ETH";"$INT_WIFI")")"
-    icon="$(echo "$void")"
-fi
+    echo "$icon $status"
+}
 
-case $1 in
-    status) echo "$status"
-    ;;
-    icon) echo "$icon"
-    ;;
-    both) echo "$icon $status"
-    ;;
-esac
+get_network || echo "Cannot get network!"#; exit 1

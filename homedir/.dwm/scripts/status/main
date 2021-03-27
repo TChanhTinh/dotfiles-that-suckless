@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+source $HOME/.dotfiles_var
+
+network=$(sh $SCRIPTS_DIR/status/network)
+power=$(sh $SCRIPTS_DIR/status/power)
+temp=$(sh $SCRIPTS_DIR/status/temp)
+
+echo "$network | $power | $temp"

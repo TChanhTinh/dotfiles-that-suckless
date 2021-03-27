@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+source $HOME/.dotfiles_var
+
+power_dev_path="/sys/class/power_supply"
+is_connected=$(cat $power_dev_path/$AC_DEV/online)
+
+[[ -d $power_dev_path/$AC_DEV ]] && \
+
+get_power_status() {
+    if [[ "$is_connected" -eq 1 ]]; then
+        icon=""
+        status="AC"
+    else
+        icon=""
+        status=$(cat $power_dev_path/$BATTERY_DEV/capacity)
+    fi
+    echo "$icon $status"
+}
+
+get_power_status || echo "Power supply not found!"#; exit 1

@@ -5,7 +5,7 @@ temp_dev_path="/sys/devices/virtual/thermal"
 
 [[ -d $temp_dev_path/$TEMP_DEV ]] && \
 
-get_temp() {
+function get_temp() {
     temp="$(cat $temp_dev_path/$TEMP_DEV/temp)"
     temp="$(expr $temp / 1000)"
     if [[ "$temp" -lt 50 ]]; then
@@ -21,4 +21,4 @@ get_temp() {
     echo "$icon $temp$CEL"
 }
 
-get_temp || echo "$TEMP_DEV not found!"; exit 1
+get_temp || echo "$TEMP_DEV not found!"#; exit 1

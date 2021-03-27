@@ -3,28 +3,12 @@ source $HOME/.dotfiles_var
 
 CURRENT_MUSICPL="$($DEFAPPS_EXEC -g musicpl)"
 
-if [[ $CURRENT_MUSICPL = "mpd" ]]; then
-    prev="mpc -q prev"
-    toggle="mpc -q toggle"
-    stop="mpc -q stop"
-    next="mpc -q next"
-    status="mpc status"
-    title="$(mpc --format '[%title%|%file%]' current)"
-elif [[ $CURRENT_MUSICPL = "spotify" ]]; then
-    prev="playerctl -p spotify previous"
-    toggle="playerctl -p spotify play-pause"
-    stop="playerctl -p spotify stop"
-    next="playerctl -p spotify next"
-    status="playerctl -p spotify status"
-    title="$(playerctl -p spotify metadata -f '{{title}}')"
-else
-    prev=""
-    toggle=""
-    stop=""
-    next=""
-    status=""
-    title="There is no mpd or spotify installed"
-fi
+prev="mpc -q prev"
+toggle="mpc -q toggle"
+stop="mpc -q stop"
+next="mpc -q next"
+status="mpc status"
+title="$(mpc --format '[%title%|%file%]' current)"
 
 status="$($status)"
 
@@ -65,9 +49,4 @@ case $1 in
         $EXNOTIFY_SEND -u low -i "$NOTIF_MUSIC_ICON" -r 8888 "Music Player" "Set <u>`$DEFAPPS_EXEC -g musicpl`</u> as default"
     ;;
     1) mpc -q next;;
-esac
-
-case $BUTTON in
-    1) mpc -q toggle;;
-    2) mpc -q next;;
 esac
