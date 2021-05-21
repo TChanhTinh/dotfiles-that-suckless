@@ -48,34 +48,34 @@ $ apt install pavucontrol alsa-utils brightnessctl nitrogen xautolock xclip lxpo
 # Keybind:
 | Key | Option  |
 | --- |:-------:|
-| `Super + T` | Open Terminal |
-| `Super + E` | Open Thunar |
-| `Super + R` | Open application launcher (Rofi) |
-| `Super + 1/2/3/4` | Switch workplace |
-| `Super + Shift + 1/2/3/4` | Move window to another workplace |
-| `Super + B` | Toggle bar |
-| `Super + C` | Close window |
-| `Super + Z` | Zoom window |
-| `Super + A` | Switch to left window |
-| `Super + D` | Switch to right window |
-| `Super + G` | Toggle floating window and centered it |
-| `Super + Tab` | Switch to right window |
-| `Super + Shift + A` | Expand right window |
-| `Super + Shift + D` | Expand left window |
-| `Super + Shift + S` | Expand top window |
-| `Super + Shift + W` | Expand bottom window |
-| `Super + Shift + X` | Hide window |
-| `Super + Shift + Z` | Show window |
-| `Super + K` | Set tiling layout |
-| `Super + H` | Switch tiling style left |
-| `Super + V` | Switch tiling style right |
-| `Super + N` | Set floating layout |
-| `Super + M` | Set zen layout |
-| `Super + X` | Toggle layout |
+| `MODKEY + T` | Open Terminal |
+| `MODKEY + E` | Open Thunar |
+| `MODKEY + R` | Open application launcher (Rofi) |
+| `MODKEY + 1/2/3/4` | Switch workplace |
+| `MODKEY + Shift + 1/2/3/4` | Move window to another workplace |
+| `MODKEY + B` | Toggle bar |
+| `MODKEY + C` | Close window |
+| `MODKEY + Z` | Zoom window |
+| `MODKEY + A` | Switch to left window |
+| `MODKEY + D` | Switch to right window |
+| `MODKEY + G` | Toggle floating window and centered it |
+| `MODKEY + Tab` | Switch to right window |
+| `MODKEY + Shift + A` | Expand right window |
+| `MODKEY + Shift + D` | Expand left window |
+| `MODKEY + Shift + S` | Expand top window |
+| `MODKEY + Shift + W` | Expand bottom window |
+| `MODKEY + Shift + X` | Hide window |
+| `MODKEY + Shift + Z` | Show window |
+| `MODKEY + K` | Set tiling layout |
+| `MODKEY + H` | Switch tiling style left |
+| `MODKEY + V` | Switch tiling style right |
+| `MODKEY + N` | Set floating layout |
+| `MODKEY + M` | Set zen layout |
+| `MODKEY + X` | Toggle layout |
 | `Print` | Screenshot |
 | `Shift + Print` | Area screenshot |
-| `Super + Shift + R` | Reload DWM |
-| `Super + Shift + Q` | Quit DWM |
+| `MODKEY + Shift + R` | Reload DWM |
+| `MODKEY + Shift + Q` | Quit DWM |
 
 Thank owl4ce for base scripts.
 Feel free report any issue or new idea on this setup, forks are welcome!
