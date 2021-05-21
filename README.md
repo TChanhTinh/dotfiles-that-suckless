@@ -16,13 +16,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 
 # Ubuntu install dependencies:
 ```
-$ apt install pavucontrol alsa-utils brightnessctl nitrogen xautolock xclip lxpolkit scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync dunst rofi python3-pip meson
-```
-```
-$ apt install install build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev
-```
-```
-$ pip3 install pywal
+$ apt install pavucontrol alsa-utils brightnessctl nitrogen xautolock xclip lxpolkit scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync dunst rofi python3-pip meson build-essential libx11-dev libxinerama-dev sharutils suckless-tools libxft-dev stterm libxext-dev libxcb1-dev libxcb-damage0-dev libxcb-xfixes0-dev libxcb-shape0-dev libxcb-render-util0-dev libxcb-render0-dev libxcb-randr0-dev libxcb-composite0-dev libxcb-image0-dev libxcb-present-dev libxcb-xinerama0-dev libxcb-glx0-dev libpixman-1-dev libdbus-1-dev libconfig-dev libgl1-mesa-dev libpcre2-dev libpcre3-dev libevdev-dev uthash-dev libev-dev libx11-xcb-dev && pip3 install pywal
 ```
 
 # My Setup: 
