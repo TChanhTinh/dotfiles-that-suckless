@@ -16,7 +16,7 @@ $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip 
 
 # Ubuntu install dependencies:
 ```
-$ apt install pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip lxpolkit scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync dunst rofi python-pywal python-pip3 meson
+$ apt install pavucontrol alsa-utils brightnessctl nitrogen xautolock xclip lxpolkit scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync dunst rofi python3-pip meson
 ```
 ```
 $ pip3 install pywal
