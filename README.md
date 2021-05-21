@@ -14,6 +14,14 @@ Now using Pywal & Wpgtk to change color scheme match wallpaper with Wally script
 $ yay -S pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip lxpolkit NetworkManager scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync wireless_tools dunst rofi python-pywal wpgtk
 ```
 
+# Ubuntu install dependencies:
+```
+$ apt install pavucontrol alsa-utils brightnessctl nitrogen slimlock xautolock xclip lxpolkit scrot thunar thunar-archive-plugin thunar-media-tags-plugin thunar-volman ffmpegthumbnailer viewnior w3m w3m-img htop playerctl xsettingsd imagemagick python psmisc rsync dunst rofi python-pywal python-pip3 meson
+```
+```
+$ pip3 install pywal
+```
+
 # My Setup: 
 * Window Manager: DWM
 * Shell: Zsh 
